@@ -10,13 +10,10 @@ let win;
 
 function createWindow() {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600, titleBarStyle: 'hidden'});
+  win = new BrowserWindow({width: 1280, height: 720, titleBarStyle: 'hidden', backgroundColor: '#1a1b1e'});
 
-  // and load the index.html of the app.
-  win.loadURL('https://www.youtube.com/tv',{userAgent: 'Mozilla/5.0 (SMART-TV; Linux; Tizen 5.0) AppleWebKit/538.1 (KHTML, like Gecko) Version/5.0 NativeTVAds Safari/538.1'});
-
-  // Open the DevTools.
-  // win.webContents.openDevTools();
+  win.setMenu(null);
+  win.loadURL('https://www.xbox.com/en-US/play',{userAgent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36'});
 
   // Emitted when the window is closed.
   win.on('closed', () => {

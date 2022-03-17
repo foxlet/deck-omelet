@@ -1,18 +1,10 @@
-<h1 align="center">Youtube TV</h1>
+Xbox Cloud Gaming (deck-omelet)
+===============================
+An Electron wrapper for the Xbox Cloud Gaming service.
 
-<p align="center">
-An electron wrapper for Youtube TV with Chromecast support.
-</p>
-
-----
-<p align="center">
-  <img width="650" align="center" src="https://github.com/KeizerDev/youtube-tv/blob/master/youtube-tv.png">
-</p>
-
-## Install
+To build
+--------
+```bash
+npm install
+./node_modules/.bin/electron-builder
 ```
-$ npm install
-# Make sure you've electron installed globally ((sudo) npm install electron-prebuilt -g)
-$ electron index.js
-```
-

@@ -1,8 +1,21 @@
 {
-  "name": "youtube-tv",
+  "name": "xbox-cloud",
   "version": "0.1.0",
+  "description": "Play games from the Xbox Cloud library",
+  "author": "Foxlet",
   "main": "index.js",
   "dependencies": {
     "electron-cookies": "^1.1.0"
+  },
+  "devDependencies": {
+    "electron": "^17.1.2",
+    "electron-builder": "^22.14.13"
+  },
+  "build": {
+    "appId": "co.furcode.xbox-cloud",
+    "productName": "Xbox Cloud Gaming",
+    "linux": {
+      "category": "Game"
+    }
   }
 }
